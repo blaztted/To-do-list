@@ -1,5 +1,6 @@
 import { blankProjectLoad } from "./blank-project.js";
 
+
 //DOM manipulation to display the UI components
 export function displayDefaultProject (){
 
