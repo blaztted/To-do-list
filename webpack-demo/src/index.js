@@ -1,11 +1,12 @@
 import { createToDo } from './create-to-do.js';
 import { blankProjectLoad } from './blank-project.js';
-import { displayDefaultProject, displayTheForm, addItemToCheckList, clearForm, initialdomManip } from './dom-manip.js';
+import { displayDefaultProject, displayTheForm, addItemToCheckList, clearForm } from './dom-manip.js';
 
 
 //Call blankProjectLoad on first land
 blankProjectLoad();
 
+//TODO: COme back to this call in case I build this in the future
 //Call DOM Manipulation module to load default project
 //displayDefaultProject();
 
@@ -32,10 +33,10 @@ let clickEventsModule = (function(){
 
 
 
-
+/* 
 //Call create-to-do.ks module file and apply some objects/properties
 const myToDo = createToDo("Grocery run", "Go get groceries", "07/07/2023", "Low", "Meat", "eggs");
 const myToDo2 = createToDo("Gym", "Go to the gym", "07/07/2023", "High", "Meat");
 
 console.log("show properties on myToDo from index.js...", myToDo);
-console.log("show properties on myToDo2 from index.js...", myToDo2);
+console.log("show properties on myToDo2 from index.js...", myToDo2); */

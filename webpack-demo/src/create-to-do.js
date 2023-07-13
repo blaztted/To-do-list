@@ -13,13 +13,13 @@ export const createToDo = () => {
     let Description = document.getElementById("Description").value;
     let DueDate = document.getElementById("DueDate").value;
     let Priority = document.getElementById("Priority").value;
-
-    //Check if a empty fields exist
+ 
+/*     //Check if a empty fields exist
     if (Title == "" || Description == "" || DueDate == ""){
         alert("Title, Description, and Due Date are required fields, try again!")
         return;
     }
-
+ */
     //Check if a pre-date was entered
     if (parseISO(DueDate) < startOfToday()){
         alert("You have entered a date that has already gone! Please enter a valid date");
@@ -45,11 +45,11 @@ export const createToDo = () => {
     console.log({Title, Description, DueDate, Priority, CheckList});
     console.log("Pushing this object to the toDoArray...");
     //TODO: remove below two lines of code if array is not needed
-    toDoArray.push({Title, Description, DueDate, Priority, CheckList})
+    toDoArray.push({ Title, Description, DueDate, Priority, CheckList })
     console.log(toDoArray);
 
     //Call storage mmodule and push object to local storage
-    saveToDoToLocal({ Title, Description, DueDate, Priority, CheckList })
+    saveToDoToLocal({ Title, Description, DueDate, Priority }, CheckList)
 
     //Reset the form after successful submission
     clearForm();
